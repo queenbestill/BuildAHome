@@ -100,10 +100,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:ownlearnenglish@gmail.com")}
+                    onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots", "_blank")}
                   >
-                    Contact
+                    Donate
                   </Button>
+
                 </div>
               ) : (
                 <div className="grid grid-cols-1">
@@ -123,10 +124,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:ownlearnenglish@gmail.com")}
+                    onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots", "_blank")}
                   >
                     Donate
                   </Button>
+
                 </div>
               )}
             </Popover.Panel>
@@ -164,9 +166,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:ownlearnenglish@gmail.com")}>
-            Donate
-            </Button>
+              <Button
+                onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots", "_blank")}
+              >
+                Donate
+              </Button>
+
             {mounted && theme && data.darkMode && (
               <Button
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -193,9 +198,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:ownlearnenglish@gmail.com")}>
-              Contact
+            <Button
+              onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots", "_blank")}
+            >
+              Donate
             </Button>
+
 
             {mounted && theme && data.darkMode && (
               <Button
