@@ -1,0 +1,124 @@
+{
+  "name": "Build a home",
+  "headerTaglineOne": "Hello 👋",
+  "headerTaglineTwo": "I'm Patri - curious",
+  "headerTaglineThree": "designer and teacher",
+  "headerTaglineFour": " based in Lisbon, Portugal.",
+  "showCursor": true,
+  "showUpdate": true,
+  "darkMode": true,
+  "showImpact": true,
+  "socials": [
+    {
+      "id": "1",
+      "title": "WhyDonate",
+      "link": "https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots"
+    },
+    {
+      "id": "2",
+      "title": "TikTok",
+      "link": "https://www.tiktok.com/@a_home_in_lisbon"
+    },
+    {
+      "id": "3",
+      "title": "Email",
+      "link": "mailto:ownlearnenglish@gmail.com"
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Lisbon",
+      "description": "Design meets history",
+      "imageSrc": "https://images.unsplash.com/photo-1487837647815-bbc1f30cd0d2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Njl8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "url": "http://bellezzaritrovata.com/"
+    },
+    {
+      "id": "2",
+      
+     
+      "imageSrc": "https://images.unsplash.com/photo-1605153864431-a2795a1b2f95?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTY3ODl8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=60",
+      "url": "http://bellezzaritrovata.com/"
+    },
+    {
+      "id": "3",
+      "title": "Braga",
+      "description": "Flowers and castles",
+      "imageSrc": "https://images.unsplash.com/photo-1504083898675-c896ecdae86e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "url": "http://bellezzaritrovata.com/"
+    },
+    {
+      "id": "4",
+     
+  
+      "imageSrc": "https://images.unsplash.com/photo-1492171983775-a51717616c0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NjB8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "url": "http://bellezzaritrovata.com/"
+    },
+    {
+      "id": "5",
+      "title": "Porto",
+      "description": "Ongoing development",
+      "imageSrc": "https://images.unsplash.com/photo-1534239143101-1b1c627395c5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8NzZ8fHBhc3RlbHxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=400&q=60",
+      "url": "http://bellezzaritrovata.com/"
+    },
+    {
+      "id": "6",
+      
+
+      "imageSrc": "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
+      "url": "http://bellezzaritrovata.com/"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Why this campaign",
+      "description": "I am raising funds for a first home in Lisbon — a stable base to teach, create, and grow."
+    },
+    {
+      "id": "2",
+      "title": "Use of funds",
+      "description": "Down payment and essential legal costs only. No lifestyle expenses, just the path to a modest, safe home."
+    },
+    {
+      "id": "3",
+      "title": "Transparency & updates",
+      "description": "Regular progress posts with photos and simple budget snapshots so you can see every step."
+    },
+    {
+      "id": "4",
+      "title": "Ways to help",
+      "description": "Donate if you can, or share the project with friends, communities, or potential partners."
+    }
+  ]
+,
+  "aboutpara": "Hello! I'm Patricia, an English teacher and creative based in Lisbon.\n\nAfter years of moving between temporary homes, I dream of a place to call my own.\n\nLisbon's housing prices have made that dream hard to reach.\n\nThis campaign helps fund a down payment and essential legal costs.\n\nEvery euro goes directly toward a stable, peaceful home.\n\nFrom there, I can teach, create, and share work with more heart.\n\nI'll post transparent updates: progress, photos, and milestones.\n\nIf you can't donate, sharing the campaign already helps a lot.\n\nThank you for walking this path with me.",
+  "impact": {
+    "tagline": "👋  I'm an English teacher.",
+    "description": "Passionate about technology, education, and urban renewal, I am building projects that connect creativity, language, and community.\n\nMy work focuses on creating meaningful impact — from helping people communicate confidently in English to reimagining forgotten spaces in cities like Lisbon and Las Palmas.",
+    "experiences": [
+      {
+        "id": "1",
+        "dates": "March 2018 - Present",
+        "type": "Full Time",
+        "position": "Founder & Creative Director at Own English",
+        "bullets": "[Developing an AI-powered language platform..., Building the web platform with Next.js, Clerk and Convex]"
+      },
+      {
+        "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
+        "dates": "July 2020 - March 2022",
+        "type": "Full Time",
+        "position": "Frontend Engineer at X",
+        "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+      }
+    ],
+    "education": {
+      "universityName": "University X",
+      "universityDate": "2016-2020",
+      "universityPara": "Lorem Ipsum is simply fdnjg fdigshsidofg"
+    },
+    "languages": ["Javascript", "HTML5", "CSS", "Python", "Go"],
+    "frameworks": ["React", "Typescript", "NodeJs"],
+    "others": ["Figma", "AdobeXD", "AWS"]
+  }
+}
