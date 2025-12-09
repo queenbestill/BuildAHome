@@ -22,6 +22,7 @@ const ProjectImpact = ({ dates, type, position, bullets }) => {
         )}
       </div>
     </div>
+    
   );
 };
 

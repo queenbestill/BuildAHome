@@ -8,10 +8,10 @@ export default function handler(req, res) {
   const postsfolder = join(process.cwd(), `/_posts/${uuidv4()}.md`);
   if (process.env.NODE_ENV === "development") {
     if (req.method === "POST") {
-      const data = matter.stringify("# New Update", {
+      const data = matter.stringify("# New Blog", {
         date: new Date().toISOString(),
-        title: "New Update",
-        tagline: "Amazing New Update",
+        title: "New Blog",
+        tagline: "Amazing New Blog",
         preview:
           "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
         image: getRandomImage(),

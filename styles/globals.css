@@ -6,7 +6,6 @@
 
 * {
   font-family: "Hind";
-  
 }
 
 body {
@@ -19,7 +18,7 @@ body {
   z-index: 100;
   top: -30px;
   height: 40px;
-  width: calc(100vw - (100vw - 100%));
+  width: 100vw;
   opacity: 0.5;
   filter: blur(40px);
   background: radial-gradient(
@@ -34,7 +33,7 @@ body {
   z-index: 100;
   bottom: -20px;
   height: 30px;
-  width: calc(100vw - (100vw - 100%));
+  width: 100vw;
   opacity: 0.5;
   filter: blur(40px);
   background: radial-gradient(
@@ -76,7 +75,3 @@ body {
   background: inherit;
   border-radius: inherit;
 }
-
-
-
-

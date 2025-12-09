@@ -1,5 +1,5 @@
 ---
-date: '2025-10-07T11:50:54.000Z'
+date: '2022-07-15T11:50:54.000Z'
 title: Campaign Updates
 tagline: News, photos, and supporters
 preview: >-
@@ -19,3 +19,40 @@ I’ll be sharing photos and videos showing how things are evolving, from everyd
 ## Supporters
 
 I’ll also post updates to acknowledge everyone who contributed to this campaign. Each donation, message, or share means a lot — thank you for your support.
+
+Jon was the first person to donate. Thank you, Jon!
+
+
+## BLockquote
+
+> Stability isn’t something you find by chance. It’s something you build, one steady step at a time.
+
+## Steps to secure the land
+
+1. Confirm legal status, boundaries and ownership.
+2. Verify zoning rules and permitted uses.
+3. Request updated land registry documents.
+4. Negotiate the purchase terms and conditions.
+5. Sign the promissory contract and transfer the deposit.
+6. Complete due diligence and finalize the deed.
+
+---
+
+## Tasks to renovate a ruined house
+
+- Assess structural integrity with an engineer.
+- Clear debris and secure the site.
+- Plan utilities: water, electricity, sewage.
+- Restore or replace roofing and walls.
+- Install doors, windows and insulation.
+- Finish interior: floors, plaster, paint.
+
+---
+
+## Links
+
+A useful link is [Building Advisor](https://www.buildingadvisor.com).
+
+## Images
+
+![A silver lining in the house](https://images.unsplash.com/photo-1662025173075-b82cca7b5aaa?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)

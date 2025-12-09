@@ -2,13 +2,13 @@
 
 ### Live - https://react-portfolio-template.netlify.app
 ### Demo Video - https://www.youtube.com/watch?v=62_HLbx2zLQ&t=9s
-### Open Source UI Components - https://ui.bellezzaritrovata.com/
+### Open Source UI Components - https://ui.chetanverma.com/
 
 ### Tutorials
 
 Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
 
-updates - https://www.bellezzaritrovata.com/update/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
+Blog - https://www.chetanverma.com/blog/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
 
 ### Features - 
 
@@ -16,7 +16,7 @@ updates - https://www.bellezzaritrovata.com/update/how-to-build-a-portfolio-webs
 - Minimal Design
 - Easy To Browse
 - Easy To Customize your details With GUI
-- updates Crud (Create, Read, Update, Delete updates with easy to use UI).
+- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
 - Dark Mode
 
 
@@ -27,7 +27,7 @@ updates - https://www.bellezzaritrovata.com/update/how-to-build-a-portfolio-webs
 - Services
 - About
 - Contact
-- Markdown updates
+- Markdown Blog
 
 
 ### How To Use
@@ -47,7 +47,7 @@ updates - https://www.bellezzaritrovata.com/update/how-to-build-a-portfolio-webs
 
 Quickes way to deploy this repo - 
 
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/bellezzaritrovata16/react-portfolio-template)
+[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/react-portfolio-template)
 
 
 ### How To Contribute - 
@@ -70,7 +70,7 @@ If you liked this portfolio template, don't forget to give it a ⭐.
 ## Supporting
 Many hours of hard work have gone into this project. Your support will be very appreciated!
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/bellezzaritrovata)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
 
 
 

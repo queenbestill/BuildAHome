@@ -47,7 +47,7 @@ const Edit = () => {
           imageSrc:
             "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
 
-          url: "http://bellezzaritrovata.com/",
+          url: "http://chetanverma.com/",
         },
       ],
     });
@@ -104,7 +104,7 @@ const Edit = () => {
         {
           id: uuidv4(),
           title: "New Link",
-          link: "www.bellezzaritrovata.com",
+          link: "www.chetanverma.com",
         },
       ],
     });
@@ -148,12 +148,12 @@ const Edit = () => {
 
   return (
     <div className={`container mx-auto ${data.showCursor && "cursor-none"}`}>
-      <Header isUpdate></Header>
+      <Header isBlog></Header>
       {data.showCursor && <Cursor />}
       <div className="mt-10">
         <div className={`${theme === "dark" ? "bg-transparent" : "bg-white"}`}>
           <div className="flex items-center justify-between">
-            <h1 className="text-4xl">Dashboard</h1>
+            <h2 className="text-4xl">Dashboard</h2>
             <div className="flex items-center">
               <Button onClick={saveData} type="primary">
                 Save
@@ -193,7 +193,7 @@ const Edit = () => {
               Social
             </Button>
             <Button
-              onClick={() => setCurrentTabs("IMPACT")}
+              onClick={() => setCurrentTabs("impact")}
               type={currentTabs === "IMPACT" && "primary"}
             >
               Impact
@@ -265,18 +265,18 @@ const Edit = () => {
               ></input>
             </div>
             <div className="mt-5 flex items-center">
-              <label className="w-1/5 text-lg opacity-50">Update</label>
+              <label className="w-1/5 text-lg opacity-50">Blog</label>
               <div className="w-4/5 ml-10 flex items-center">
                 <Button
-                  onClick={() => setData({ ...data, showUpdate: true })}
-                  type={data.showUpdate && "primary"}
+                  onClick={() => setData({ ...data, showBlog: true })}
+                  type={data.showBlog && "primary"}
                 >
                   Yes
                 </Button>
                 <Button
-                  onClick={() => setData({ ...data, showUpdate: false })}
+                  onClick={() => setData({ ...data, showBlog: false })}
                   classes={
-                    !data.showUpdate && "bg-red-500 text-white hover:bg-red-600"
+                    !data.showBlog && "bg-red-500 text-white hover:bg-red-600"
                   }
                 >
                   No
@@ -349,7 +349,7 @@ const Edit = () => {
               {data.projects.map((project, index) => (
                 <div className="mt-10" key={project.id}>
                   <div className="flex items-center justify-between">
-                    <h1 className="text-2xl">{project.title}</h1>
+                    <h2 className="text-2xl">{project.title}</h2>
                     <Button
                       onClick={() => deleteProject(project.id)}
                       type="primary"
@@ -437,7 +437,7 @@ const Edit = () => {
               {data.services.map((service, index) => (
                 <div key={service.id}>
                   <div className="flex items-center justify-between">
-                    <h1 className="text-2xl">{service.title}</h1>
+                    <h2 className="text-2xl">{service.title}</h2>
                     <Button
                       onClick={() => deleteService(service.id)}
                       type="primary"
@@ -487,7 +487,7 @@ const Edit = () => {
         )}
         {currentTabs === "ABOUT" && (
           <div className="mt-10">
-            <h1 className="text-2xl">About</h1>
+            <h2 className="text-2xl">About</h2>
             <textarea
               className="w-full h-96 mt-10 p-2 rounded-md shadow-md border"
               value={data.aboutpara}
@@ -501,7 +501,7 @@ const Edit = () => {
               <>
                 <div key={social.id}>
                   <div className="flex items-center justify-between">
-                    <h1 className="text-2xl">{social.title}</h1>
+                    <h2 className="text-2xl">{social.title}</h2>
                     <Button
                       onClick={() => deleteSocials(social.id)}
                       type="primary"
@@ -550,7 +550,7 @@ const Edit = () => {
         )}
         {currentTabs === "IMPACT" && (
           <div className="mt-10">
-            <h1>Main</h1>
+            <h2>Main</h2>
             <div className="mt-5 flex items-center">
               <label className="w-1/5 text-sx opacity-50">Tagline</label>
               <input
@@ -580,12 +580,12 @@ const Edit = () => {
             </div>
             <hr className="my-10"></hr>
 
-            <h1>Experiences</h1>
+            <h2>Experiences</h2>
             <div className="mt-10">
               {data.impact.experiences.map((experiences, index) => (
                 <div className="mt-5" key={experiences.id}>
                   <div className="flex items-center justify-between">
-                    <h1 className="text-2xl">{experiences.position}</h1>
+                    <h2 className="text-2xl">{experiences.position}</h2>
                     <Button
                       // onClick={() => deleteProject(project.id)}
                       type="primary"
@@ -663,7 +663,7 @@ const Edit = () => {
             </div>
             <hr className="my-10"></hr>
             <div className="mt-10">
-              <h1>Education</h1>
+              <h2>Education</h2>
               <div className="flex items-center mt-5">
                 <label className="w-1/5 text-lg opacity-50">Name</label>
                 <input
@@ -775,7 +775,7 @@ const Edit = () => {
                         ...data,
                         impact: {
                           ...data.impact,
-                          languages: [...data.impact.languages, "Added"],
+                          languages: [...data.resuimpactme.languages, "Added"],
                         },
                       })
                     }

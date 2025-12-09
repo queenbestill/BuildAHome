@@ -69,12 +69,12 @@ export default function Comparator({ beforeSrc, afterSrc }) {
     <div
       ref={wrapper}
       style={{
-        position: "relative",
-        width: "100%",
-        aspectRatio: "16/9",
-        overflow: "hidden",
-        borderRadius: "12px",
-        userSelect: "none",
+      position: "relative",
+      width: "100%",
+      height: "100%",      // 🔹 antes tenía aspectRatio
+      overflow: "hidden",
+      borderRadius: "12px",
+      userSelect: "none",
       }}
     >
       <img
@@ -85,7 +85,7 @@ export default function Comparator({ beforeSrc, afterSrc }) {
           inset: 0,
           width: "100%",
           height: "100%",
-          objectFit: "cover",
+
           pointerEvents: "none",
         }}
       />
@@ -98,7 +98,7 @@ export default function Comparator({ beforeSrc, afterSrc }) {
           inset: 0,
           width: "100%",
           height: "100%",
-          objectFit: "cover",
+
           pointerEvents: "none",
           clipPath: "inset(0 0 0 50%)",
         }}

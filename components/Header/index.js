@@ -6,26 +6,15 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
+const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  const { name, showUpdate, showImpact } = data;
+  const { name, showBlog, showImpact } = data;
 
   useEffect(() => {
     setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollTop = window.scrollY;
-      setIsScrolled(scrollTop > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -34,12 +23,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
-              <h1
+              <h2
                 onClick={() => router.push("/")}
                 className="font-medium p-2 laptop:p-0 link"
               >
                 {name}.
-              </h1>
+              </h2>
 
               <div className="flex items-center">
                 {data.darkMode && (
@@ -75,24 +64,20 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
             </div>
             <Popover.Panel
               className={`absolute right-0 z-10 w-11/12 p-4 ${
-                isScrolled 
-                  ? "bg-gradient-to-b from-purple-200 to-white dark:from-purple-800 dark:to-gray-900 backdrop-blur-sm" 
-                  : theme === "dark" 
-                    ? "bg-slate-800" 
-                    : "bg-white"
-              } shadow-md rounded-md transition-all duration-300 ease-in-out`}
+                theme === "dark" ? "bg-slate-800" : "bg-white"
+              } shadow-md rounded-md`}
             >
-              {!isUpdate ? (
+              {!isBlog ? (
                 <div className="grid grid-cols-1">
                   <Button onClick={handleWorkScroll}>Pictures</Button>
                   <Button onClick={handleAboutScroll}>About</Button>
-                  {showUpdate && (
-                    <Button onClick={() => router.push("/update")}>Updates</Button>
+                  {showBlog && (
+                    <Button onClick={() => router.push("/blog")}>Updates</Button>
                   )}
                   {showImpact && (
                     <Button
                       onClick={() =>
-                        window.open("mailto:ownlearnenglish@gmail.com")
+                        window.open("mailto:hello@chetanverma.com")
                       }
                     >
                       Impact
@@ -100,7 +85,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:ownlearnenglish@gmail.com")}
+                    onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots")}
                   >
                     Contact
                   </Button>
@@ -110,8 +95,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
                   <Button onClick={() => router.push("/")} classes="first:ml-1">
                     Home
                   </Button>
-                  {showUpdate && (
-                    <Button onClick={() => router.push("/update")}>Updates</Button>
+                  {showBlog && (
+                    <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
                   {showImpact && (
                     <Button
@@ -123,9 +108,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:ownlearnenglish@gmail.com")}
+                    onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots")}
                   >
-                    Donate
+                    Contact
                   </Button>
                 </div>
               )}
@@ -135,25 +120,21 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
       </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          isScrolled 
-            ? "bg-gradient-to-b from-purple-200 to-white dark:from-purple-800 dark:to-gray-900 backdrop-blur-sm" 
-            : theme === "light" 
-              ? "bg-white" 
-              : "bg-transparent"
-        } dark:text-white top-0 z-10 tablet:flex transition-all duration-300 ease-in-out`}
+          theme === "light" && "bg-white"
+        } dark:text-white top-0 z-10 tablet:flex`}
       >
-        <h1
+        <h2
           onClick={() => router.push("/")}
           className="font-medium cursor-pointer mob:p-2 laptop:p-0"
         >
           {name}.
-        </h1>
-        {!isUpdate ? (
+        </h2>
+        {!isBlog ? (
           <div className="flex">
             <Button onClick={handleWorkScroll}>Pictures</Button>
             <Button onClick={handleAboutScroll}>About</Button>
-            {showUpdate && (
-              <Button onClick={() => router.push("/update")}>Updates</Button>
+            {showBlog && (
+              <Button onClick={() => router.push("/blog")}>Updates</Button>
             )}
             {showImpact && (
               <Button
@@ -164,8 +145,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:ownlearnenglish@gmail.com")}>
-            Donate
+            <Button onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots")}>
+              Contact
             </Button>
             {mounted && theme && data.darkMode && (
               <Button
@@ -181,8 +162,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
         ) : (
           <div className="flex">
             <Button onClick={() => router.push("/")}>Home</Button>
-            {showUpdate && (
-              <Button onClick={() => router.push("/update")}>Updates</Button>
+            {showBlog && (
+              <Button onClick={() => router.push("/blog")}>Blog</Button>
             )}
             {showImpact && (
               <Button
@@ -193,7 +174,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isUpdate }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:ownlearnenglish@gmail.com")}>
+            <Button onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots")}>
               Contact
             </Button>
 

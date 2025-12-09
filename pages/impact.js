@@ -10,6 +10,7 @@ import { useTheme } from "next-themes";
 import { name, showImpact } from "../data/portfolio.json";
 import { impact } from "../data/portfolio.json";
 import data from "../data/portfolio.json";
+import Footer from "../components/Footer";
 
 const Impact = () => {
   const router = useRouter();
@@ -27,7 +28,7 @@ const Impact = () => {
       {process.env.NODE_ENV === "development" && (
         <div className="fixed bottom-6 right-6">
           <Button onClick={() => router.push("/edit")} type={"primary"}>
-            Edit Impact
+            Impact
           </Button>
         </div>
       )}
@@ -37,7 +38,7 @@ const Impact = () => {
           data.showCursor && "cursor-none"
         }`}
       >
-        <Header isUpdate />
+        <Header isBlog />
         {mount && (
           <div className="mt-10 w-full flex flex-col items-center">
             <div
@@ -57,22 +58,19 @@ const Impact = () => {
                 <h1 className="text-2xl font-bold">🏠 1. Housing Crisis and Accessibility</h1>
                 <p className="text-sm mt-2 opacity-50">Lisbon is facing one of the sharpest housing crises in Europe. Rents have increased over 65% in the last five years, while local salaries remain among the lowest in Western Europe. Many educators, artists, and independent professionals are being displaced from the city center — losing both stability and community.
                 By supporting this campaign, you’re not only helping me secure a home, but also standing for fair access to housing and creative sustainability.</p>
-                {/* {impact.experiences.map(
-                  ({ id, dates, type, position, bullets }) => (
-                    <ProjectImpact
-                      key={id}
-                      dates={dates}
-                      type={type}
-                      position={position}
-                      bullets={bullets}
-                    ></ProjectImpact>
-                  )
-                )} */}
               </div>
               <div className="mt-5">
                 <h1 className="text-2xl font-bold">💡 2. Empowering Independent Work</h1>
                 <p className="text-sm mt-2 opacity-50">Having a stable home means having a stable workspace. It allows me to keep teaching English to students around the world, expand Own English, and collaborate with local creative projects in Lisbon. Every contribution helps preserve independent work in a city where freelancers are being priced out of their own neighborhoods.</p>
-                {/* <div className="mt-2">
+                
+              </div>
+              <div className="mt-5">
+                <h1 className="text-2xl font-bold">🌍 3. Community and Cultural Impact</h1>
+                <p className="text-sm mt-2 opacity-50">This isn’t just about one home — it’s about building continuity, belonging, and contribution. From this base, I’ll continue creating language-learning programs, community art projects, and digital storytelling about Lisbon’s evolving identity. Your support has a ripple effect: it helps one person stay, teach, create, and give back.</p>
+              </div>
+             {/* <div className="mt-5">
+                <h1 className="text-2xl font-bold">Education</h1>
+                <div className="mt-2">
                   <h2 className="text-lg">{impact.education.universityName}</h2>
                   <h3 className="text-sm opacity-75">
                     {impact.education.universityDate}
@@ -80,12 +78,11 @@ const Impact = () => {
                   <p className="text-sm mt-2 opacity-50">
                     {impact.education.universityPara}
                   </p>
-                </div> */}
+                </div>
               </div>
               <div className="mt-5">
-                <h1 className="text-2xl font-bold">🌍 3. Community and Cultural Impact</h1>
-                <p className="text-sm mt-2 opacity-50">This isn’t just about one home — it’s about building continuity, belonging, and contribution. From this base, I’ll continue creating language-learning programs, community art projects, and digital storytelling about Lisbon’s evolving identity. Your support has a ripple effect: it helps one person stay, teach, create, and give back.</p>
-                {/* <div className="flex mob:flex-col desktop:flex-row justify-between">
+                <h1 className="text-2xl font-bold">Skills</h1>
+                <div className="flex mob:flex-col desktop:flex-row justify-between">
                   {impact.languages && (
                     <div className="mt-2 mob:mt-5">
                       <h2 className="text-lg">Languages</h2>
@@ -123,12 +120,13 @@ const Impact = () => {
                         ))}
                       </ul>
                     </div>
-                  )}
-                </div> */}
-              </div>
+                  )}*/}
+                
             </div>
+            
           </div>
         )}
+        <Footer />
       </div>
     </>
   );
