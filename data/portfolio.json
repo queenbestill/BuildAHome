@@ -1,13 +1,27 @@
-﻿{
+{
   "name": "Build a home",
-  "headerTaglineOne": "Help",
-  "headerTaglineTwo": "Build a Home",
-  "headerTaglineThree": "Where You Can Return",
-  "headerTaglineFour": "to Disconnect and Breathe",
+  "siteTitle": "Build a Home | A Space to Reclaim Life Beyond Blue Screens",
+  "siteDescription": "Help me find a home in Spain: a phone-free space for meditation, rest and presence. Support the project and get your attention back.",
+  "donateUrl": "https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots",
   "showCursor": true,
   "showBlog": true,
   "darkMode": true,
-  "showImpact": true,
+  "showImpact": false,
+  "hero": {
+    "eyebrow": "A SPACE TO RECLAIM LIFE BEYOND BLUE SCREENS",
+    "titleOne": "Help me find a home.",
+    "titleTwo": "Step away from the endless scroll.",
+    "subtitle": "I'm looking for a house in Spain and I don't have the funds to buy it yet. My goal is to raise €40,000 to buy and renovate it. In return for your support, I'm offering the space I'll open there: a place to step back from the blue light, meditate, rest and be present.",
+    "steps": [
+      "I need a home",
+      "You support the project",
+      "You get your attention back"
+    ],
+    "primaryButton": "Support the Project",
+    "secondaryButton": "See how it works",
+    "noteOne": "Every euro goes to buying and renovating the house. You'll see every step.",
+    "noteTwo": "Every contribution is thanked. From €91, it also includes phone-free time at the house once it opens."
+  },
   "socials": [
     {
       "id": "1",
@@ -22,54 +36,47 @@
     {
       "id": "3",
       "title": "Email",
-      "link": "mailto:ownlearnenglish@gmail.com"
+      "link": "mailto:meditationinsilence@gmail.com"
     }
   ],
+  "space": {
+    "title": "The Space We Could Build",
+    "subtitle": "A home designed for disconnection, stillness, and meaningful connection.",
+    "note": "These images are an idea of what we hope to achieve, not photos of the actual property."
+  },
   "projects": [
     {
       "id": "1",
-      "title": "Project One",
-      "description": "This is what a home would look like",
       "useComparator": true,
       "beforeImageSrc": "/casas/lisboa2.jpg",
       "afterImageSrc": "/casas/lisboa2 remodelada.png"
     },
     {
       "id": "2",
-      "title": "Project Two",
-      "description": "Bringing homes back to life",
       "useComparator": true,
       "beforeImageSrc": "/casas/cascais1.jpg",
       "afterImageSrc": "/casas/cascais1 remodelada - copia.png"
     },
     {
       "id": "3",
-      "title": "Project Three",
-      "description": "With light",
       "useComparator": true,
       "beforeImageSrc": "/casas/lisboa3.jpg",
       "afterImageSrc": "/casas/lisboa3 remodelada.png"
     },
     {
       "id": "4",
-      "title": "Project Four",
-      "description": "And love",
       "useComparator": true,
       "beforeImageSrc": "/casas/lisboa4.jpg",
       "afterImageSrc": "/casas/lisboa4 remodelada.png"
     },
     {
       "id": "5",
-      "title": "Project Five",
-      "description": "Harmonising with culture, spaces and resources",
-     "useComparator": true,
+      "useComparator": true,
       "beforeImageSrc": "/casas/lisboa6.jpg",
       "afterImageSrc": "/casas/lisboa6 remodelada.png"
     },
     {
       "id": "6",
-      "title": "Project Six",
-      "description": "With resources we can access",
       "useComparator": true,
       "beforeImageSrc": "/casas/lisboa7.png",
       "afterImageSrc": "/casas/lisboa7 remodelada.png"
@@ -79,51 +86,111 @@
     {
       "id": "1",
       "title": "Why this campaign",
-      "description": "I am raising funds for a first home in Lisbon — a stable base to teach, create, and grow."
+      "description": "Screen overload is rarely talked about openly. For many people, compulsive use of the phone, social media or video games can interfere with rest, concentration, relationships and general wellbeing. I want to build a simple, welcoming place for people who want to step away from their screens and rediscover rest, real conversation and a sense of presence. Not a luxury retreat."
     },
     {
       "id": "2",
-      "title": "Use of funds",
-      "description": "Down payment and essential legal costs only. No lifestyle expenses, just the path to a modest, safe home."
+      "title": "What the house will offer",
+      "description": "A phone-free wellbeing space for adults. Guests will be asked to leave their phones aside during their stay and take part in a simple, structured programme centred on meditation, presence and healthier digital boundaries. Activities may include guided meditation, quiet time, walks, shared meals, group sessions, practical workshops on digital habits, and space to read, rest, talk and reconnect with others."
     },
     {
       "id": "3",
-      "title": "Transparency & updates",
-      "description": "Regular progress posts with photos and simple budget snapshots so you can see every step."
+      "title": "Use of funds",
+      "description": "The goal is €40,000, to buy and renovate the house: finding and securing a suitable property in Spain, adapting and renovating it, furnishing it for the first programmes, and covering legal, administrative and notary costs."
     },
     {
       "id": "4",
+      "title": "Transparency & updates",
+      "description": "Regular progress posts with photos, milestones and simple budget snapshots, so you can see every step."
+    },
+    {
+      "id": "5",
       "title": "Ways to help",
-      "description": "Donate if you can, or share the project with friends, communities, or potential partners."
+      "description": "Support the project if you can, or share the campaign with friends and communities. Sometimes the person who can help is just one share away."
     }
   ],
-  "aboutpara": "Hello! I'm Patricia, an English teacher and creative based in Lisbon.\n\nAfter years of moving between temporary homes, I dream of a place to call my own.\n\nLisbon's housing prices have made that dream hard to reach.\n\nThis campaign helps fund a down payment and essential legal costs.\n\nEvery euro goes directly toward a stable, peaceful home.\n\nFrom there, I can teach, create, and share work with more heart.\n\nI'll post transparent updates: progress, photos, and milestones.\n\nIf you can't donate, sharing the campaign already helps a lot.\n\nThank you for walking this path with me.",
-  "impact": {
-    "tagline": "👋  I'm an English teacher.",
-    "description": "Passionate about technology, education, and urban renewal, I am building projects that connect creativity, language, and community.\n\nMy work focuses on creating meaningful impact — from helping people communicate confidently in English to reimagining forgotten spaces in cities like Lisbon and Las Palmas.",
-    "experiences": [
+  "legalNotice": "This project offers wellbeing, meditation and presence activities. It does not provide diagnosis, psychological or psychiatric treatment, or professional mental-health care, and it is not a substitute for the support of a healthcare professional when needed. The house and its programmes are intended for adults aged 18 and over. Before their stay, each guest will be asked to accept the house rules, the commitment to leave their phone aside during activities, and the booking conditions. Phones will be stored away during the programme, while reasonable access will be available for emergencies and essential personal circumstances.",
+  "rewards": {
+    "title": "What you get in return.",
+    "lead": "From €91, your support also includes phone-free time at the house once it opens.",
+    "badge": "PHONE-FREE TIME INCLUDED",
+    "tiers": [
       {
         "id": "1",
-        "dates": "March 2018 - Present",
-        "type": "Full Time",
-        "position": "Founder & Creative Director at Own English",
-        "bullets": "[Developing an AI-powered language platform..., Building the web platform with Next.js, Clerk and Convex]"
+        "emoji": "🌱",
+        "name": "Supporter",
+        "price": "€20 – €50",
+        "access": false,
+        "perks": [
+          "Personal thank-you message",
+          "Access to private updates and reflections about the journey",
+          "Behind-the-scenes stories about building the house step by step"
+        ]
       },
       {
-        "id": "d495c23b-4f65-479a-9b8a-cfbc1c089725",
-        "dates": "July 2020 - March 2022",
-        "type": "Full Time",
-        "position": "Frontend Engineer at X",
-        "bullets": "Worked on the frontend of a React application, Worked on the frontend of a React application"
+        "id": "2",
+        "emoji": "🕊️",
+        "name": "Community Friend",
+        "price": "€51 – €90",
+        "access": false,
+        "perks": [
+          "Everything above, plus:",
+          "A digital guide on conscious disconnection and healthier digital habits",
+          "Invitation to a private online group session before the house opens"
+        ]
+      },
+      {
+        "id": "3",
+        "emoji": "🎓",
+        "name": "Contributor",
+        "price": "€91 – €170",
+        "access": true,
+        "perks": [
+          "Everything above, plus:",
+          "A day pass to the house once it opens, with access to its programmes",
+          "Your name on a commemorative plaque inside the space"
+        ]
+      },
+      {
+        "id": "4",
+        "emoji": "🌍",
+        "name": "Co-Creator",
+        "price": "€171 – €270",
+        "access": true,
+        "perks": [
+          "Everything above, plus:",
+          "A four-day stay with the full disconnection programme, once the house opens",
+          "A personalised session on digital habits and healthier screen boundaries"
+        ]
+      },
+      {
+        "id": "5",
+        "emoji": "🤝",
+        "name": "Founding Supporter",
+        "price": "€271+",
+        "access": true,
+        "perks": [
+          "Everything above, plus:",
+          "A one-week stay with the full disconnection programme, once the house opens",
+          "A room named permanently in your honour (or that of someone you choose)"
+        ]
       }
     ],
+    "bookingTitle": "Stays and bookings",
+    "booking": "Day passes and stays can be booked once the house is open and are subject to availability. If you choose a reward that includes a day pass or stay, leave a valid email address when you donate on WhyDonate, or write to meditationinsilence@gmail.com with the name used for the donation and the support level chosen. Transport to and from the house is not included."
+  },
+  "aboutpara": "Hi, I'm Patricia: a teacher, a creator, and someone who cares deeply about how our relationship with screens is shaping the way we live.\n\nI teach English to international students and professionals, and I develop educational and creative projects.\n\nI've seen, again and again, how many people struggle with a stressful, compulsive relationship with their screens, and a constant lack of attention.\n\nI don't have the funds to buy a house on my own. So I'm asking for your help, and in return I'm offering what I'm building: a place to step back from the endless scroll, meditate, rest and be present.\n\nI'll share transparent updates with photos and milestones along the way.\n\nIf you can't donate, sharing the campaign helps more than you might imagine.\n\nThank you for walking this path with me.",
+  "impact": {
+    "tagline": "👋  I'm an English teacher.",
+    "description": "Passionate about technology, education, and urban renewal, I am building projects that connect creativity, language, and community.",
+    "experiences": [],
     "education": {
-      "universityName": "University X",
-      "universityDate": "2016-2020",
-      "universityPara": "Lorem Ipsum is simply fdnjg fdigshsidofg"
+      "universityName": "",
+      "universityDate": "",
+      "universityPara": ""
     },
-    "languages": ["Javascript", "HTML5", "CSS", "Python", "Go"],
-    "frameworks": ["React", "Typescript", "NodeJs"],
-    "others": ["Figma", "AdobeXD", "AWS"]
+    "languages": [],
+    "frameworks": [],
+    "others": []
   }
 }

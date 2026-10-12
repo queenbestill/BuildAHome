@@ -6,16 +6,40 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
+const Header = ({
+  handleWorkScroll,
+  handleCampaignScroll,
+  handleAboutScroll,
+  isBlog,
+}) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  const { name, showBlog, showImpact } = data;
+  const { name, showBlog, donateUrl } = data;
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  const openDonate = () => window.open(donateUrl, "_blank");
+
+  // Navigation items, shared by the mobile menu and the desktop bar
+  const items = !isBlog
+    ? [
+        { label: "The space", onClick: handleWorkScroll },
+        { label: "The campaign", onClick: handleCampaignScroll },
+        { label: "About", onClick: handleAboutScroll },
+        showBlog && { label: "Updates", onClick: () => router.push("/blog") },
+        { label: "Support", onClick: openDonate },
+      ]
+    : [
+        { label: "Home", onClick: () => router.push("/") },
+        showBlog && { label: "Updates", onClick: () => router.push("/blog") },
+        { label: "Support", onClick: openDonate },
+      ];
+
+  const navItems = items.filter(Boolean);
 
   return (
     <>
@@ -67,53 +91,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 theme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
-              {!isBlog ? (
-                <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Pictures</Button>
-                  <Button onClick={handleAboutScroll}>About</Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Updates</Button>
-                  )}
-                  {showImpact && (
-                    <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
-                    >
-                      Impact
-                    </Button>
-                  )}
-
-                  <Button
-                    onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots")}
-                  >
-                    Contact
+              <div className="grid grid-cols-1">
+                {navItems.map((item) => (
+                  <Button key={item.label} onClick={item.onClick}>
+                    {item.label}
                   </Button>
-                </div>
-              ) : (
-                <div className="grid grid-cols-1">
-                  <Button onClick={() => router.push("/")} classes="first:ml-1">
-                    Home
-                  </Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
-                  )}
-                  {showImpact && (
-                    <Button
-                      onClick={() => router.push("/impact")}
-                      classes="first:ml-1"
-                    >
-                      Impact
-                    </Button>
-                  )}
-
-                  <Button
-                    onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots")}
-                  >
-                    Contact
-                  </Button>
-                </div>
-              )}
+                ))}
+              </div>
             </Popover.Panel>
           </>
         )}
@@ -129,67 +113,23 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         >
           {name}.
         </h2>
-        {!isBlog ? (
-          <div className="flex">
-            <Button onClick={handleWorkScroll}>Pictures</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Updates</Button>
-            )}
-            {showImpact && (
-              <Button
-                onClick={() => router.push("/impact")}
-                classes="first:ml-1"
-              >
-                Impact
-              </Button>
-            )}
-
-            <Button onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots")}>
-              Contact
+        <div className="flex">
+          {navItems.map((item) => (
+            <Button key={item.label} onClick={item.onClick}>
+              {item.label}
             </Button>
-            {mounted && theme && data.darkMode && (
-              <Button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              >
-                <img
-                  className="h-6"
-                  src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
-              </Button>
-            )}
-          </div>
-        ) : (
-          <div className="flex">
-            <Button onClick={() => router.push("/")}>Home</Button>
-            {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
-            {showImpact && (
-              <Button
-                onClick={() => router.push("/impact")}
-                classes="first:ml-1"
-              >
-                Impact
-              </Button>
-            )}
-
-            <Button onClick={() => window.open("https://whydonate.com/fundraising/a-home-in-lisbon-my-dream-of-stability-and-roots")}>
-              Contact
+          ))}
+          {mounted && theme && data.darkMode && (
+            <Button
+              onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+            >
+              <img
+                className="h-6"
+                src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
+              ></img>
             </Button>
-
-            {mounted && theme && data.darkMode && (
-              <Button
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              >
-                <img
-                  className="h-6"
-                  src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
-                ></img>
-              </Button>
-            )}
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </>
   );

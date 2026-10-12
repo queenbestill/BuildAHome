@@ -10,18 +10,14 @@ const WorkCard = ({ img, name, description, useComparator, beforeSrc, afterSrc }
           <Comparator beforeSrc={beforeSrc} afterSrc={afterSrc} />
         ) : (
           <img
-            alt={name}
+            alt={name || "Illustration of the space"}
             className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
             src={img}
           ></img>
         )}
       </div>
-      <h2 className="mt-5 text-3xl font-medium">
-        {name ? name : "Project Name"}
-      </h2>
-      <h3 className="text-xl opacity-50">
-        {description ? description : "Description"}
-      </h3>
+      {name && <h2 className="mt-5 text-3xl font-medium">{name}</h2>}
+      {description && <h3 className="text-xl opacity-50">{description}</h3>}
     </div>
   );
 };

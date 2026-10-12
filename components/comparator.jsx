@@ -79,7 +79,7 @@ export default function Comparator({ beforeSrc, afterSrc }) {
     >
       <img
         src={beforeSrc}
-        alt="Before"
+        alt="The space as it is today"
         style={{
           position: "absolute",
           inset: 0,
@@ -92,7 +92,7 @@ export default function Comparator({ beforeSrc, afterSrc }) {
       <img
         ref={afterImg}
         src={afterSrc}
-        alt="After"
+        alt="An idea of the finished space"
         style={{
           position: "absolute",
           inset: 0,
