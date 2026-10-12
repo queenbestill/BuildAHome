@@ -9,8 +9,12 @@
   "showImpact": false,
   "hero": {
     "eyebrow": "A SPACE TO RECLAIM LIFE BEYOND BLUE SCREENS",
-    "titleOne": "Help me find a home.",
-    "titleTwo": "Step away from the endless scroll.",
+    "titleLines": [
+      "Help me",
+      "find a home.",
+      "Step away from",
+      "the endless scroll."
+    ],
     "subtitle": "I'm looking for a house in Spain and I don't have the funds to buy it yet. My goal is to raise €40,000 to buy and renovate it. In return for your support, I'm offering the space I'll open there: a place to step back from the blue light, meditate, rest and be present.",
     "steps": [
       "I need a home",
@@ -114,6 +118,7 @@
     "title": "What you get in return.",
     "lead": "From €91, your support also includes phone-free time at the house once it opens.",
     "badge": "PHONE-FREE TIME INCLUDED",
+    "cta": "Support at this level",
     "tiers": [
       {
         "id": "1",

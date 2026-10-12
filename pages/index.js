@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Head from "next/head";
 import Button from "../components/Button";
 import Cursor from "../components/Cursor";
+import Socials from "../components/Socials";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -22,6 +23,8 @@ export default function Home() {
   const textTwo = useRef();
   const textThree = useRef();
   const textFour = useRef();
+  const textFive = useRef();
+  const titleRefs = [textOne, textTwo, textThree, textFour];
 
   const { hero, space, rewards } = data;
 
@@ -38,7 +41,13 @@ export default function Home() {
 
   useIsomorphicLayoutEffect(() => {
     stagger(
-      [textOne.current, textTwo.current, textThree.current, textFour.current],
+      [
+        textOne.current,
+        textTwo.current,
+        textThree.current,
+        textFour.current,
+        textFive.current,
+      ],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
       { y: 0, x: 0, transform: "scale(1)" }
     );
@@ -66,28 +75,31 @@ export default function Home() {
 
         {/* Hero: the whole message is visible without scrolling */}
         <div className="laptop:mt-16 mt-8 p-2 laptop:p-0">
-          <p
-            ref={textOne}
-            className="text-xs tablet:text-sm tracking-[0.25em] opacity-60"
-          >
+          <p className="text-xs tablet:text-sm tracking-[0.25em] opacity-60">
             {hero.eyebrow}
           </p>
-          <h1
-            ref={textTwo}
-            className="mt-4 text-3xl tablet:text-6xl laptopl:text-7xl font-bold leading-tight w-full laptop:w-4/5"
-          >
-            {hero.titleOne}
-            <span className="block opacity-50">{hero.titleTwo}</span>
+          <h1 className="mt-4">
+            {hero.titleLines.map((line, index) => (
+              <span
+                key={line}
+                ref={titleRefs[index]}
+                className={`block text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-6xl font-bold leading-[1.1] w-full laptop:w-4/5 ${
+                  index > 1 ? "text-neutral-500" : ""
+                }`}
+              >
+                {line}
+              </span>
+            ))}
           </h1>
-          <p
-            ref={textThree}
-            className="mt-6 text-lg tablet:text-xl laptop:text-2xl opacity-80 w-full laptop:w-3/5 leading-snug"
-          >
-            {hero.subtitle}
-          </p>
 
-          <div ref={textFour}>
-            <div className="mt-6 flex flex-wrap items-center gap-2 text-sm tablet:text-base">
+          <div ref={textFive}>
+            <Socials className="mt-2 laptop:mt-4" />
+
+            <p className="mt-4 text-lg tablet:text-xl laptop:text-2xl opacity-80 w-full laptop:w-3/5 leading-snug">
+              {hero.subtitle}
+            </p>
+
+            <div className="mt-5 flex flex-wrap items-center gap-2 text-sm tablet:text-base">
               {hero.steps.map((step, index) => {
                 const last = index === hero.steps.length - 1;
                 return (
@@ -108,13 +120,15 @@ export default function Home() {
                       </span>
                       {step}
                     </span>
-                    {!last && <span className="hidden tablet:inline opacity-40">→</span>}
+                    {!last && (
+                      <span className="hidden tablet:inline opacity-40">→</span>
+                    )}
                   </span>
                 );
               })}
             </div>
 
-            <div className="mt-6 flex flex-wrap">
+            <div className="mt-5 flex flex-wrap">
               <Button type="primary" onClick={openDonate}>
                 {hero.primaryButton}
               </Button>
@@ -123,7 +137,7 @@ export default function Home() {
               </Button>
             </div>
 
-            <p className="mt-4 text-sm opacity-60 w-full laptop:w-3/5 leading-snug">
+            <p className="mt-3 text-sm opacity-60 w-full laptop:w-3/5 leading-snug">
               {hero.noteOne}
               <br />
               {hero.noteTwo}
@@ -181,6 +195,8 @@ export default function Home() {
                 perks={tier.perks}
                 access={tier.access}
                 badge={rewards.badge}
+                href={data.donateUrl}
+                cta={rewards.cta}
               />
             ))}
           </div>
