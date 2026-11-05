@@ -26,32 +26,6 @@
     "noteOne": "Every euro goes to buying and renovating the house. You'll see every step.",
     "noteTwo": "Every contribution is thanked. From €91, it also includes phone-free time at the house once it opens."
   },
-  "thankYou": {
-    "siteTitle": "Thank you | Build a Home",
-    "eyebrow": "YOU'RE IN",
-    "title": "Thank you for sharing your thoughts.",
-    "intro": "Your answers are in, and they genuinely help. I'll keep you posted as the campaign grows, so keep an eye on your inbox: that's where the news will land first.",
-    "whyTitle": "Why I'm doing this",
-    "why": "We spend most of our days looking at screens, and many of us can feel the cost: scattered attention, fewer real conversations, less silence. This campaign is my small act of rebellion in favour of a life beyond the blue light.",
-    "storyTitle": "The story",
-    "story": "It began with a simple wish: a house in Spain where people can put their phones down, sit in silence, meditate and simply be present. The house has to be bought and renovated, and my goal is €40,000. Every contribution brings that place closer to reality, and every supporter is thanked in return.",
-    "followTitle": "Follow the campaign",
-    "donateLabel": "Donate on WhyDonate",
-    "websiteLabel": "Visit the campaign website",
-    "websiteUrl": "https://build-a-home.vercel.app/",
-    "tiktokLabel": "Follow on TikTok @vidasinpantallas",
-    "tiktokUrl": "https://www.tiktok.com/@vidasinpantallas",
-    "supportTitle": "Need help or have a question?",
-    "support": "I'd love to hear from you. Write to me and I'll get back to you as soon as I can.",
-    "supportButton": "Write to me",
-    "supportEmail": "aslatainfo@gmail.com",
-    "supportSubject": "A question about the Build a Home campaign",
-    "bonusEyebrow": "YOUR EXCLUSIVE RESOURCE",
-    "bonusTitle": "Digital wellbeing, one small habit at a time",
-    "bonus": "A short post with simple, practical ideas to use your phone more mindfully, like keeping the first hour of your day screen-free. Small changes, felt quickly.",
-    "bonusButton": "Read the post",
-    "bonusUrl": "/blog/digital-wellbeing"
-  },
   "socials": [
     {
       "id": "1",
